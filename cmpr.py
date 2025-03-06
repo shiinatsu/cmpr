@@ -532,10 +532,10 @@ class SaveXlsxWorker(QThread):
         except Exception as e:
             self.error_signal.emit(str(e))
 
-class CSVComparerApp(QMainWindow):
+class cmprApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle(f"CSV Comparer {VERSION}")
+        self.setWindowTitle(f"cmpr {VERSION}")
         self.setGeometry(100, 100, 800, 700)
         self.setWindowIcon(QIcon("icon.png"))
         self.file1_path = ""
@@ -1396,7 +1396,7 @@ class CSVComparerApp(QMainWindow):
         help_text = QTextEdit()
         help_text.setReadOnly(True)
         help_text.setText(
-            "CSV Comparer 사용 방법\n\n"
+            "cmpr 사용 방법\n\n"
             "1. 파일 선택\n"
             "   - 'CSV 파일 1'과 'CSV 파일 2'를 찾아서 로드하세요.\n"
             "   - 구분자는 콤보 박스에서 선택하거나 사용자 정의로 추가 가능합니다.\n\n"
@@ -1426,13 +1426,13 @@ class CSVComparerApp(QMainWindow):
     # 정보 다이얼로그 표시 함수 추가
     def show_about_dialog(self):
         QMessageBox.about(self, "정보", 
-                          f"CSV Comparer {VERSION}\n"
-                          "CSV 파일 비교 도구\n"
+                          f"cmpr {VERSION}\n"
+                          "CSV 데이터터 파일 비교 도구\n"
                           "개발자: D.SEO\n"
                           "최종 업데이트: 2025-03-05")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = CSVComparerApp()
+    window = cmprApp()
     window.show()
     sys.exit(app.exec())
