@@ -1427,7 +1427,7 @@ class cmprApp(QMainWindow):
     def show_about_dialog(self):
         QMessageBox.about(self, "정보", 
                           f"cmpr {VERSION}\n"
-                          "CSV 데이터터 파일 비교 도구\n"
+                          "CSV 데이터 파일 비교 도구\n"
                           "개발자: D.SEO\n"
                           "최종 업데이트: 2025-03-05")
 
