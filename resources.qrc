@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/asset/">
         <file>cmpr-icon.png</file>
     </qresource>
 </RCC>

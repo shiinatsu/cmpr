@@ -505,7 +505,7 @@ class cmprApp(QMainWindow):
         self.setWindowTitle(f"cmpr {VERSION}")
         self.setGeometry(100, 100, 800, 700)
         #self.setWindowIcon(QIcon("cmpr-icon.png"))
-        self.setWindowIcon(QIcon(":/cmpr-icon.png"))
+        self.setWindowIcon(QIcon(":/asset/cmpr-icon.png"))
         self.file1_path = ""
         self.file2_path = ""
         self.file1_headers = []

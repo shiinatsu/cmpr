@@ -441,7 +441,7 @@ class cmprApp(QMainWindow):
         self.load_language_data()  # 언어 데이터 로드
         self.setWindowTitle(self.tr("window_title").format(version=VERSION))
         self.setGeometry(100, 100, 800, 700)
-        self.setWindowIcon(QIcon(":/cmpr-icon.png"))
+        self.setWindowIcon(QIcon(":/asset/cmpr-icon.png"))
         self.file1_path = ""
         self.file2_path = ""
         self.file1_headers = []
